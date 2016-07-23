@@ -1,25 +1,20 @@
-import {
-    TOKENIZE,
-    AUTH,
-    INSTANCE,
-    LOGOUT,
- } from './actions'
+let Actions = require('./actions')
 
-export function overall(state = {}, action) {
+module.exports = function overall(state = {}, action) {
     let mutate = state
     switch (action.type) {
-        case TOKENIZE:
+        case Actions.TOKENIZE:
             return Object.assign({}, state, { accessToken: action.token })
 
         // @deprecated
-        case AUTH:
+        case Actions.AUTH:
             return Object.assign({}, state, { user: action.user })
 
-        case LOGOUT:
+        case Actions.LOGOUT:
             delete mutate.User
             return Object.assign({}, mutate)
 
-        case INSTANCE:
+        case Actions.INSTANCE:
             mutate[action.key] = action.instance
             return Object.assign({}, state, mutate)
 

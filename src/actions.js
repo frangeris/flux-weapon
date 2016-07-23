@@ -34,7 +34,7 @@ function instance(instance, name = null) {
     }
 }
 
-export {
+module.exports = {
     TOKENIZE, tokenize,
     AUTH, auth,
     INSTANCE, instance,
