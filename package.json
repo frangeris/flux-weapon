@@ -1,6 +1,6 @@
 {
   "name": "flux-weapon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Collection of reusables Actions, Reducers for Flux architecture",
   "main": "index.js",
   "scripts": {
