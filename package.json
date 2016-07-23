@@ -1,0 +1,25 @@
+{
+  "name": "flux-weapon",
+  "version": "1.0.0",
+  "description": "Collection of reusables Actions, Reducers for Flux architecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frangeris/flux-weapon"
+  },
+  "keywords": [
+    "flux",
+    "tools",
+    "actions",
+    "reducers"
+  ],
+  "author": "Frangeris Peguero <frangeris.20@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frangeris/flux-weapon/issues"
+  },
+  "homepage": "https://github.com/frangeris/flux-weapon#readme"
+}
