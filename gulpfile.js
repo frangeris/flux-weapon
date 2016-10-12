@@ -5,7 +5,8 @@ gulp.task('webpack', () => {
     return gulp.src('./index.js')
         .pipe(webpack({
             output: {
-                filename: 'index.js'
+                filename: 'index.js',
+                libraryTarget: 'umd',
             },
             module: {
                 loaders: [
@@ -14,7 +15,7 @@ gulp.task('webpack', () => {
                         loader: 'babel-loader',
                         query: {
                             presets: ['es2015'],
-                        },
+                        }
                     },
                 ],
             },
