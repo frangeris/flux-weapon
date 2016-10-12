@@ -1,10 +1,10 @@
 {
   "name": "flux-weapon",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Collection of reusables Actions, Reducers for Flux architecture",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/gulp/bin/gulp.js pack"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/frangeris/flux-weapon/issues"
   },
-  "homepage": "https://github.com/frangeris/flux-weapon#readme"
+  "homepage": "https://github.com/frangeris/flux-weapon#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "gulp": "^3.9.1",
+    "webpack-stream": "^3.2.0"
+  }
 }
